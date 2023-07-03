@@ -2,7 +2,7 @@
 
 ## Idea
 
-There are several different methods for determining starting ability scores in TTRPGs (rolling, point buy, etc). [^disclaim]
+There are several different methods for determining starting ability scores in TTRPGs (rolling, point buy, etc).
 
 > Assuming abilities are normally distributed within the (human) population, how do these various methods compare to a normal distribution?
 
@@ -22,4 +22,6 @@ There are several different methods for determining starting ability scores in T
 
 
 
-[^disclaim] I am certain that this has been done many times before, and I know it's not a complicated project, but I thought it would be neat and would be good practice.
+
+_____________________________
+I am certain that this has been done many times before, and I know it's not a complicated project, but I thought it would be neat and would be good practice.
