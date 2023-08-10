@@ -1,27 +1,62 @@
-# Modeling different methods for generating ability scores
+# Modeling "Weird Dice"
 
 ## Idea
 
-There are several different methods for determining starting ability scores in TTRPGs (rolling, point buy, etc).
+In TTRPGs (in particular, Pathfinder and Dungeons & Dragons), you use a 20 sided die to determine success and failure, with a 1 being an absolute failure and a 20 being an excellent success. One of the things my group likes to talk about is alternate schemes for rolling these; Mike calls them "weird dice."
 
-> Assuming abilities are normally distributed within the (human) population, how do these various methods compare to a normal distribution?
+Similarly, there are many ways to get the 6 ability scores your character is based on. I'm curious what the distributions look like for these (both for each score and for overall characters).
 
-#### To do:
+### Alternate versions of success/failure
+- 1d20 (obviously equal probabilities of everything)
+  * advantage/disadvantage
+  * 2d20 average and truncate
+- 2d10 (no way to get a 1)
 
-* Read and make a list of ability score methods
-* Decide how to simulate rolling multiple characters
-  * for point buy, I'll need to simulate all the scores at once maybe?
-* compare to a normal distribution
-  * mean and std dev for the different methods
-* where do some of my and my friends' characters fall?
- 
-#### More ambitious/stretch?
+### Different ways to roll ability scores
 
-* make character ability scores into a vector and look at spread that way?
-* predict (pathfinder) class? 
+With ability scores there are options where you roll all the ability scores individually and then just assign them and versions where you look at the 6 ability scores as a whole. I'll focus mainly on the ones considered individually, at least to start.
+
+#### Considered individually
+
+In these methods you roll 6 scores and then assign them:
+
+* Roll 4d6, sum the three largest (standard)
+* Roll 4d6, reroll 1s, sum the three largest (what we did in college)
+* Roll 3d6 and sum (classic)
+* Roll 3d6, reroll 1s, sum (classic+)
+
+#### Character as a whole
+
+In these methods, you have a pool of some kind and distribute the points among the different scores:
+
+* 24d6, choose number of dice per stat and roll (dice pool)
+  - same as above but 28d6 (heroic dice pool)
+* Point buy: all ability scores start at 10, and you're given a certain number of points that can be distributed with increases "costing more" and decreases "refunding less" as you get to the extremes
 
 
+##### Point buy tables:
+via https://www.d20pfsrd.com/basics-ability-scores/ability-scores/
+
+| Campaign type   | Points  |
+| -------------   |--------:|
+| Low fantasy     | 10      |
+| Standard fantasy| 15      |
+| High fantasy    | 20      |
+| Epic fantasy    | 25      |
 
 
-_____________________________
-I am certain that this has been done many times before, and I know it's not a complicated project, but I thought it would be neat and would be good practice.
+Cost/Refund
+|Score   |  Points|
+|:------:|:------:|
+|7       |  -4|
+|8       |  -2|
+|9       |  -1|
+|10      |   0|
+|11      |   1|
+|12      |   2|
+|13      |   3|
+|14      |   5|
+|15      |   7|
+|16      |  10|
+|17      |  13|
+|18      |  17|
