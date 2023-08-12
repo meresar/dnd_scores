@@ -4,7 +4,7 @@
 
 In TTRPGs (in particular, Pathfinder and Dungeons & Dragons), you use a 20 sided die to determine success and failure, with a 1 being an absolute failure and a 20 being an excellent success. One of the things my group likes to talk about is alternate schemes for rolling these; Mike calls them "weird dice."
 
-Similarly, there are many ways to get the 6 ability scores your character is based on. I'm curious what the distributions look like for these (both for each score and for overall characters).
+Similarly, there are many ways to get the 6 ability scores your character is based on. I'm curious what the distributions look like for these (both for each score and for overall characters).[^tbh]
 
 ### Alternate versions of success/failure
 - 1d20 (obviously equal probabilities of everything)
@@ -60,3 +60,6 @@ Cost/Refund
 |16      |  10|
 |17      |  13|
 |18      |  17|
+
+[^tbh]:
+  Honestly, this project is mostly for funsies, and to get some practice with `matplotlib`, though I'm sure it's been done as undergrad homework projects a million and a half times
